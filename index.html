@@ -1,8 +1,8 @@
 <html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>OpenRooms</title>
+    <title>Physically-Based Editing of Indoor Scene Lighting from a Single Image</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,10 +37,10 @@
     <div class="container" id="main">
         <div class="row">
             <h1 class="col-md-12 text-center">
-                OpenRooms: An Open Framework <br>for Photorealistic Indoor Scene Datasets
+                Physically-Based Editing of Indoor Scene Lighting from a Single Image
             <br /><br />
             <small>
-                CVPR 2021 (<b>Oral presentation</b>)
+                ECCV 2022 (<b>Oral presentation</b>)
             </small>
             <br /><br />
             </h1>
@@ -54,60 +54,16 @@
                         </a><sup>1</sup>
                     </li>
                     <li>
-                        Ting-Wei Yu<sup>1</sup>
-                    </li>
-                    <li>
-                        Shen Sang<sup>1</sup>
-                    </li>
-                    <li>
-                        Sarah Wang<sup>1</sup>
-                    </li>
-                     <li>
-                        <a href="https://sites.google.com/site/mengsong1130/">
-                          Meng Song
-                        </a><sup>1</sup>
-                    </li>
-                    <li>
-                        Yuhan Liu<sup>1</sup>
-                    </li>
-                    <li>
-                        <a href="https://yuyingyeh.github.io/">
-                          Yu-Ying Yeh
-                        </a><sup>1</sup>
-                    </li>
-                    <li>
-                        <a href="https://jerrypiglet.github.io/">
-                          Rui Zhu
-                        </a><sup>1</sup>
-                    </li>
-                    <li>
-                        <a href="https://scholar.google.com/citations?user=v19p_0oAAAAJ&hl=en">
-                          Nitesh Gundavarapu
-                        </a><sup>1</sup>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="list-inline">
-                    <li>
-                        Jia Shi<sup>1</sup>
+                        Jia Shi<sup>1,3</sup>
                     </li>
                     <li>
                         <a href="http://cseweb.ucsd.edu/~bisai/">
                           Sai Bi
-                        </a><sup>1</sup>
+                        </a><sup>1,2</sup>
                     </li>
                     <li>
-                        <a href="https://cseweb.ucsd.edu/~zex014/">
-                          Zexiang Xu
-                        </a><sup>1</sup>
-                    </li>
-                    <li>
-                        <a href="https://kovenyu.com/">
-                            Hong-Xing Yu
+                        <a href="https://jerrypiglet.github.io/">
+                          Rui Zhu
                         </a><sup>1</sup>
                     </li>
                     <li>
@@ -121,6 +77,19 @@
                         </a><sup>2</sup>
                     </li>
                     <li>
+                        <a href="https://cseweb.ucsd.edu/~zex014/">
+                          Zexiang Xu
+                        </a><sup>2</sup>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
                         <a href="http://cseweb.ucsd.edu/~ravir/">
                             Ravi Ramamoorthi
                         </a><sup>1</sup>
@@ -133,7 +102,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
@@ -143,6 +112,9 @@
                     <li>
                         <sup>2</sup>Adobe
                     </li>
+                    <li>
+                        <sup>3</sup>CMU
+                    </li>
                 </ul>
             </div>
         </div>
@@ -151,26 +123,20 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="https://arxiv.org/pdf/2007.12868.pdf">
+                            <a href="https://arxiv.org/abs/2205.09343">
                             <img src="./index_files/paper.jpg" height="120px"><br>
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="http://cseweb.ucsd.edu/~viscomp/projects/CVPR21OpenRooms/video.mp4">
-                            <img src="./index_files/youtube_icon_dark.png" height="120px"><br>
-                                <h4><strong>Technical Video</strong></h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/lzqsd/InverseRenderingOfIndoorScene">
+                            <a href="https://github.com/ViLab-UCSD/IndoorLightEditing">
                             <img src="./index_files/github_pad.png" height="120px"><br>
-                                <h4><strong>Applications</strong></h4>
+                                <h4><strong>Code</strong></h4>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/ViLab-UCSD/OpenRooms">
-                            <img src="./index_files/dataNew.png" height="120px"><br>
+                            <img src="./index_files/data.png" height="120px"><br>
                                 <h4><strong>Dataset</strong></h4>
                             </a>
                         </li>
@@ -178,31 +144,18 @@
                 </div>
         </div>
 
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    &nbsp&nbsp&nbsp
-                </h3>
-                <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
-                  <source src="http://cseweb.ucsd.edu/~viscomp/projects/CVPR21OpenRooms/example.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-
-
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Overview
                 </h3>
-                <img src="./index_files/teaserNew.png" class="img-responsive" alt="overview"><br>
+                <img src="./index_files/teaser.jpg" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-                Large-scale photorealistic datasets of indoor scenes, with ground truth geometry, materials and lighting, are important for deep learning applications in scene reconstruction and augmented reality. The associated shape, material and lighting assets can be scanned or artist-created, both of which are expensive; the resulting data is usually proprietary. We aim to make the dataset creation process for indoor scenes widely accessible, allowing researchers to transform casually acquired scans to large-scale datasets with high-quality ground truth. We achieve this by estimating consistent furniture and scene layout, ascribing high quality materials to all surfaces and rendering images with spatially-varying lighting consisting of area lights and environment maps. We demonstrate an instantiation of our approach on the publicly available ScanNet dataset. Deep networks trained on our proposed dataset achieve competitive performance for shape, material and lighting estimation on real images and can be used for photorealistic augmented reality applications, such as object insertion and material editing. Importantly, the dataset and all the tools to create such datasets from scans will be released, enabling others in the community to easily build large-scale datasets of their own.
+                    We present a method to edit complex indoor lighting from a single image with its predicted depth and light source segmentation masks. This is an extremely challenging problem that requires modeling complex light transport, and disentangling HDR lighting from material and geometry with only a partial LDR observation of the scene. We tackle this problem using two novel components: 1) a holistic scene reconstruction method that estimates reflectance and parametric 3D lighting, and 2) a neural rendering framework that re-renders the scene from our predictions. We use physically-based light representations that allow for intuitive editing, and infer both visible and invisible light sources. Our neural rendering framework combines physically-based direct illumination and shadow rendering with deep networks to approximate global illumination. It can capture challenging lighting effects, such as soft shadows, directional lighting, specular materials, and interreflections. Previous single image inverse rendering methods usually entangle lighting and geometry and only support applications like object insertion. Instead, by combining parametric 3D lighting estimation with neural scene rendering, we demonstrate the first automatic method for full scene relighting from a single image, including light source insertion, removal, and replacement.
                 </p>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -211,19 +164,19 @@
                 <p class="text-justify">
                     <ul>
                         <li>
-                            A dataset with high-quality ground truth SVBRDF and spatially-varying lighting. 
+                            Novel editable, physically-based representations for common indoor light sources.
                         </li>
                         <li>
-                            Photorealistic rendering with a GPU-accelerated physically-based renderer. 
+                            An inverse rendering method to accurately recover editable physically-based representations of visible and invisible light sources, as well as reflectance.
                         </li>
                         <li>
-                            Goal of open dataset with no proprietary assets, along with tools for users to create their own datasets.
+                            A novel neural differentiable renderer that allows physically-based training, rendering and optimization.
                         </li>
                         <li>
-                            State-of-the-art performance when used as training data for inverse rendering tasks.
+                            Single-image editing of individual light sources for full scene relighting with global light transport.
                         </li>
                         <li>
-                            All code, trained models, rendered images and other ground truth to be publicly available.
+                            All code, trained models, data are to be publicly available.
                         </li>
                     </ul>
                 </p>
@@ -232,35 +185,74 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Technical Video
+                    Pipeline
+                </h3>
+                <img src="./index_files/pipeline.jpg" class="img-responsive" alt="overview"><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Editing Applications: Move Virtual Lamps
                 </h3>
                 <div class="text-center">
                     <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
-                        <source src="http://cseweb.ucsd.edu/~viscomp/projects/CVPR21OpenRooms/video.mp4" type="video/mp4">
+                        <source src="index_files/lamp.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Download
+                    Editing Applications: Open Virtual Windows
                 </h3>
-                <p class='text-justify'>To download the dataset, please send your request to the email <a>OpenRoomsDataset@gmail.com</a>. A download link will be sent to you once the dataset is released.
-                </p>
+                <div class="text-center">
+                    <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+                        <source src="index_files/window.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Editing Applications: Turn off Light Sources
+                </h3>
+                <div class="text-center">
+                    <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+                        <source src="index_files/turnoff.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Editing Applications: Change Wall Colors
+                </h3>
+                <div class="text-center">
+                    <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+                        <source src="index_files/color.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Acknowledgments
                 </h3>
-                We acknowledge support from NSF, ONR, Adobe and Google. The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                We acknowledge support from NSF, ONR, CHASE-CI, Adobe, Google and Qualcomm. The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
                 <p></p>
             </div>
         </div>
-    
+
     </div>
 
 
