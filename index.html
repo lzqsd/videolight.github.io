@@ -51,53 +51,23 @@
                     <li>
                         <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">
                           Zhengqin Li
-                        </a><sup>1</sup>
-                    </li>
-                    <li>
-                        Jia Shi<sup>1,3</sup>
-                    </li>
-                    <li>
-                        <a href="http://cseweb.ucsd.edu/~bisai/">
-                          Sai Bi
                         </a><sup>1,2</sup>
                     </li>
                     <li>
-                        <a href="https://jerrypiglet.github.io/">
-                          Rui Zhu
-                        </a><sup>1</sup>
+                        Li Yu<sup>1</sup>
                     </li>
                     <li>
-                        <a href="http://www.kalyans.org/">
-                            Kalyan Sunkavalli
-                        </a><sup>2</sup>
-                    </li>
-                    <li>
-                        <a href="http://www.miloshasan.net/">
-                            Miloš Hašan
-                        </a><sup>2</sup>
-                    </li>
-                    <li>
-                        <a href="https://cseweb.ucsd.edu/~zex014/">
-                          Zexiang Xu
-                        </a><sup>2</sup>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="list-inline">
-                    <li>
-                        <a href="http://cseweb.ucsd.edu/~ravir/">
-                            Ravi Ramamoorthi
-                        </a><sup>1</sup>
+                          Mikhail Okunev<sup>1,2</sup>
                     </li>
                     <li>
                         <a href="http://cseweb.ucsd.edu/~mkchandraker/">
-                            Manmohan Chandraker
-                        </a><sup>1</sup>
+                          Manmohan Chandraker
+                        </a><sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="http://flycooler.com/">
+                            Zhao Dong
+                        </a><sup>2</sup>
                     </li>
                 </ul>
             </div>
@@ -107,13 +77,10 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <sup>1</sup>UC San Diego
+                        <sup>1</sup>Meta Reality Labs, Research
                     </li>
                     <li>
-                        <sup>2</sup>Adobe
-                    </li>
-                    <li>
-                        <sup>3</sup>CMU
+                        <sup>2</sup>UC San Diego
                     </li>
                 </ul>
             </div>
@@ -132,12 +99,7 @@
                             <a href="https://github.com/ViLab-UCSD/IndoorLightEditing.git">
                             <img src="./index_files/github_pad.png" height="120px"><br>
                                 <h4><strong>Code</strong></h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ViLab-UCSD/OpenRooms">
-                            <img src="./index_files/data.png" height="120px"><br>
-                                <h4><strong>Dataset</strong></h4>
+                                 <p>Coming Soon</p>
                             </a>
                         </li>
                     </ul>
@@ -149,7 +111,7 @@
                 <h3>
                     Overview
                 </h3>
-                <img src="./index_files/teaser.jpg" class="img-responsive" alt="overview"><br>
+                <img src="./index_files/teaser.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
                     We present a method to edit complex indoor lighting from a single image with its predicted depth and light source segmentation masks. This is an extremely challenging problem that requires modeling complex light transport, and disentangling HDR lighting from material and geometry with only a partial LDR observation of the scene. We tackle this problem using two novel components: 1) a holistic scene reconstruction method that estimates reflectance and parametric 3D lighting, and 2) a neural rendering framework that re-renders the scene from our predictions. We use physically-based light representations that allow for intuitive editing, and infer both visible and invisible light sources. Our neural rendering framework combines physically-based direct illumination and shadow rendering with deep networks to approximate global illumination. It can capture challenging lighting effects, such as soft shadows, directional lighting, specular materials, and interreflections. Previous single image inverse rendering methods usually entangle lighting and geometry and only support applications like object insertion. Instead, by combining parametric 3D lighting estimation with neural scene rendering, we demonstrate the first automatic method for full scene relighting from a single image, including light source insertion, removal, and replacement.
                 </p>
@@ -187,7 +149,7 @@
                 <h3>
                     Pipeline
                 </h3>
-                <img src="./index_files/pipeline.jpg" class="img-responsive" alt="overview"><br>
+                <img src="./index_files/pipeline.png" class="img-responsive" alt="overview"><br>
             </div>
         </div>
 
@@ -201,55 +163,6 @@
                         <source src="index_files/lamp.mp4" type="video/mp4">
                     </video>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Editing Applications: Open Virtual Windows
-                </h3>
-                <div class="text-center">
-                    <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
-                        <source src="index_files/window.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Editing Applications: Turn off Light Sources
-                </h3>
-                <div class="text-center">
-                    <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
-                        <source src="index_files/turnoff.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Editing Applications: Change Wall Colors
-                </h3>
-                <div class="text-center">
-                    <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
-                        <source src="index_files/color.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Acknowledgments
-                </h3>
-                We acknowledge support from NSF, ONR, CHASE-CI, Adobe, Google and Qualcomm. The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
-                <p></p>
             </div>
         </div>
 
