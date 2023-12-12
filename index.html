@@ -90,7 +90,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="https://arxiv.org/abs/2205.09343">
+                            <a href="https://arxiv.org/abs/2305.04374">
                             <img src="./index_files/paper.jpg" height="120px"><br>
                                 <h4><strong>Paper</strong></h4>
                             </a>
@@ -113,7 +113,7 @@
                 </h3>
                 <img src="./index_files/teaser.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-                    We present a method to edit complex indoor lighting from a single image with its predicted depth and light source segmentation masks. This is an extremely challenging problem that requires modeling complex light transport, and disentangling HDR lighting from material and geometry with only a partial LDR observation of the scene. We tackle this problem using two novel components: 1) a holistic scene reconstruction method that estimates reflectance and parametric 3D lighting, and 2) a neural rendering framework that re-renders the scene from our predictions. We use physically-based light representations that allow for intuitive editing, and infer both visible and invisible light sources. Our neural rendering framework combines physically-based direct illumination and shadow rendering with deep networks to approximate global illumination. It can capture challenging lighting effects, such as soft shadows, directional lighting, specular materials, and interreflections. Previous single image inverse rendering methods usually entangle lighting and geometry and only support applications like object insertion. Instead, by combining parametric 3D lighting estimation with neural scene rendering, we demonstrate the first automatic method for full scene relighting from a single image, including light source insertion, removal, and replacement.
+                    We propose a physically-motivated deep learning framework to solve a general version of the challenging indoor lighting estimation problem. Given a single LDR image with a depth map, our method predicts spatially consistent lighting at any given image position. Particularly, when the input is an LDR video sequence, our framework not only progressively refines the lighting prediction as it sees more regions, but also preserves temporal consistency by keeping the refinement smooth. Our framework reconstructs a spherical Gaussian lighting volume (SGLV) through a tailored 3D encoder-decoder, which enables spatially consistent lighting prediction through volume ray tracing, a hybrid blending network for detailed environment maps, an in-network Monte-Carlo rendering layer to enhance photorealism for virtual object insertion, and recurrent neural networks (RNN) to achieve temporally consistent lighting prediction with a video sequence as the input. For training, we significantly enhance the OpenRooms public dataset of photorealistic synthetic indoor scenes with around 360K HDR environment maps of much higher resolution and 38K video sequences, rendered with GPU-based path tracing. Experiments show that our framework achieves lighting prediction with higher quality compared to state-of-the-art single-image or video-based methods, leading to photorealistic AR applications such as object insertion. 
                 </p>
             </div>
         </div>
@@ -126,19 +126,13 @@
                 <p class="text-justify">
                     <ul>
                         <li>
-                            Novel editable, physically-based representations for common indoor light sources.
+                           A hybrid framework specifically designed for complex HDR indoor lighting, especially HDR light sources, directional lighting and detailed reflection.
                         </li>
                         <li>
-                            An inverse rendering method to accurately recover editable physically-based representations of visible and invisible light sources, as well as reflectance.
+                            RNN-based modules that progressively refine lighting prediction with video inputs, while maintaining temporal consistency even with not fully consistent depth inputs. 
                         </li>
                         <li>
-                            A novel neural differentiable renderer that allows physically-based training, rendering and optimization.
-                        </li>
-                        <li>
-                            Single-image editing of individual light sources for full scene relighting with global light transport.
-                        </li>
-                        <li>
-                            All code, trained models, data are to be publicly available.
+                            State-of-the-art lighting prediction on real data, allowing photorealistic AR applications with fewer constraints.
                         </li>
                     </ul>
                 </p>
